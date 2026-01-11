@@ -80,6 +80,31 @@ python hashira/ai_conversation.py
 
 Recuerde reemplazar "myenv" con el nombre que desee para su entorno.
 
+### Instalar uv (si no lo tienes)
+
+**Linux/macOS:**
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+**Windows:**
+```powershell
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+### Instalar dependencias
+```bash
+uv sync
+```
+
+### Uso
+```bash
+# Activar el entorno virtual (si no está activo)
+source .venv/bin/activate
+
+# Ejecutar el script
+python hashira/text_extractor.py
+```
 
 ## **Contribuciones**
 

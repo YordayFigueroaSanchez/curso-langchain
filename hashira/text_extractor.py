@@ -3,12 +3,14 @@ import json
 import os
 import re
 from typing import Dict
+from dotenv import load_dotenv
 
 import emoji
 import requests
 from termcolor import colored
 from utils import create_dir, load_config, remove_existing_file
 
+load_dotenv(dotenv_path=".env")
 
 def preprocess_text(text: str) -> str:
     """

@@ -3,7 +3,7 @@ import sys
 
 import jsonlines
 import yaml
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 
 class DocsJSONLLoader:
